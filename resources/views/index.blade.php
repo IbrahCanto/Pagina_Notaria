@@ -529,10 +529,6 @@ textarea.form-control {
 
      </div>
 
-
-
-
-     
      <!-- --------------------------------------- -->
      {{-- <div class="cd-section" id="features">
        <div class="features-1">
