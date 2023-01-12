@@ -2,7 +2,7 @@
 <script>
     Swal.fire({
         icon: 'success',
-        title: 'Éxito',
+        title: 'Su mensaje ha sido enviado',
         text: "{{ Session::get('success') }}",
     })
 </script>

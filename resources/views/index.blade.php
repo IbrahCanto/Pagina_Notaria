@@ -373,7 +373,7 @@ textarea.form-control {
      </div> -->
 
 <!-- ------------------------------- -->
-     <div class="features-3" id="nosotros">
+{{-- <div class="features-3" id="nosotros">
         <div class="container-fluid">
           <div class="row">
             <div class="col-md-6 mr-auto ml-auto">
@@ -440,7 +440,7 @@ textarea.form-control {
             </div>
           </div>
         </div>
-      </div>
+      </div> --}}
 
 
 <!-- ------------------------------- -->
@@ -530,7 +530,7 @@ textarea.form-control {
      </div>
 
      <!-- --------------------------------------- -->
-     <div class="cd-section" id="features">
+     {{-- <div class="cd-section" id="features">
        <div class="features-1">
          <div class="container">
            <div class="row">
@@ -572,7 +572,7 @@ textarea.form-control {
            </div>
          </div>
        </div>
-     </div>
+     </div> --}}
        <!-- ------------------------------------- -->
 
 <!-- <div class="wrapper"> -->
