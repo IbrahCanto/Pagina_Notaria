@@ -40,7 +40,7 @@ class PagesController extends Controller
 
         $comentarios->save();
 
-        return back()->with('success', 'Enviado con exito!');
+        return back()->with('success', '');
 
         // return redirect()->route('comentarios_validacion');
     }
