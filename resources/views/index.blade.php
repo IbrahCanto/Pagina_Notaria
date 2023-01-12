@@ -839,6 +839,8 @@ textarea.form-control {
        @include('success')
        <script>
 
+        
+
 function statusCheck() {
             };
 
