@@ -241,6 +241,21 @@ textarea.form-control {
   line-height: 2;
 }
 
+.hero-image {
+  background-image: url("assets/img/business-people-shaking-hands-together.jpg");
+  width: 100%;
+  background-position: center center;
+  background-size:cover;
+  /* height: 100%; */
+  /* background-color: #cccccc;
+  height: 1080px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative; */
+  /* display: flex;
+  align-items: center; */
+}
  </style>
  
  <body class="sections-page">
@@ -279,7 +294,7 @@ textarea.form-control {
 
 <li class="nav-item">
         <a class="nav-link" href="./#headers">
-        Portada
+        Inicio
         </a>
       </li>
       <li class="nav-item">
@@ -316,7 +331,7 @@ textarea.form-control {
            <div class="container">
              <div class="row">
              <div class="col-lg-5 col-md-12 ml-auto mt-5">
-                   <img src="assets/img/Sin título-2.png">
+                   <img src="assets/img/Sin título-1.png">
                </div>
                <div class="col-lg-7 col-md-7 mr-auto text-left mt-5">
                </div>
@@ -580,19 +595,27 @@ textarea.form-control {
        <!-- ------------------------------------- -->
 
 
-       
+
 
 <!-- <div class="wrapper"> -->
   <!-- <div class="section-space"></div> -->
     <!-- <div class="cd-section" id="headers"> -->
       <!-- <div class="header header-1"> -->
-        <div class="page-header header-filter">
-          <div class="page-header-image" style="background-image: url('assets/img/business-people-shaking-hands-together.jpg');"></div>
+        <!-- <div class="page-header header-filter">
+          <div class="page-header-image" style="background-image: url('assets/img/business-people-shaking-hands-together.jpg');"></div> -->
+
+          <!-- <div class="page-header header-filter"> -->
+          <div class="header-filter">
+
+            <div class="hero-image">
+
             <div class="contactus-4" id="contactus">
 
-                <div class="row">
-                <div class="col d-flex justify-content-center">
+                <!-- <div class="row">
+                <div class="col d-flex justify-content-center"> -->
 
+                <div class="container">
+              <div class="row">
                   <div class="col-md-5">
                     <h1 class="title">Contacto</h1>
                   </div>
@@ -604,9 +627,9 @@ textarea.form-control {
                           <form class="p-3" action="{{route('comentatios_recibir')}}" method="POST">
                             @csrf
 
-                            <div class="card-header">
+                            <!-- <div class="card-header">
                   <h4 class="card-title">Contactanos</h4>
-                </div>
+                </div> -->
                               <div class="card-body">
 
                                   <div class="row">
@@ -623,10 +646,10 @@ textarea.form-control {
                                 
                                     <div class="col-md-6">
                                       <div class="form-group">
-                                          <label>Telefono</label>
+                                          <label>Teléfono</label>
                                         <div class="input-group">
                                             <div class="input-group-prepend">
-                                              <span class="input-group-text"><i class="tim-icons icon-caps-small"></i></span>
+                                              <span class="input-group-text"><i class="tim-icons icon-tablet-2"></i></span>
                                             </div>
                                           <input type="number" maxlength="100" class="form-control" id="telefono" aria-describedby="emailHelp" name="Telefono" value="{{old('Telefono')}}">
                                         </div>
@@ -641,7 +664,7 @@ textarea.form-control {
                                   @enderror
 
                                   <div class="form-group">
-                                      <label>Correo electronico</label>
+                                      <label>Correo electrónico</label>
                                     <div class="input-group">
                                       <div class="input-group-prepend">
                                         <span class="input-group-text"><i class="tim-icons icon-email-85"></i></span>
@@ -655,7 +678,7 @@ textarea.form-control {
 
                                   <div class="form-group">
                                     <label>Mensaje</label>
-                                    <textarea class="form-control textarea-limited" placeholder="Maximo 450 caracteres." rows="10" ,="" maxlength="450" name="Mensaje">{{ old('Mensaje') }}</textarea>
+                                    <textarea class="form-control textarea-limited" placeholder="Máximo de 450 caracteres." rows="10" ,="" maxlength="450" name="Mensaje">{{ old('Mensaje') }}</textarea>
                                   </div>
                                   @error('Mensaje')
                                     <p style="color:red"><strong>*{{'El campo Comentario es requerido'}}</strong></p>
@@ -663,8 +686,8 @@ textarea.form-control {
 
                                 <div class="row">
                                   <div class="col-md-8">
-                                    <input class="check-input" type="radio" name="Tipo_de_Informacion" id="Radiostipo1" value="Cita_para_Asesoría_Legal"> Cita para Asesoria Legal
-                                    <input class="check-input" type="radio" name="Tipo_de_Informacion" id="Radiostipo2" value="Información_de_Servicios"> Informacion de Servicios
+                                    <input class="check-input" type="radio" name="Tipo_de_Informacion" id="Radiostipo1" value="Cita_para_Asesoría_Legal"> Cita para asesoría legal
+                                    <input class="check-input" type="radio" name="Tipo_de_Informacion" id="Radiostipo2" value="Información_de_Servicios"> Información de Servicios
                                   </div>
 
                                   <div class="col-md-4">
@@ -682,7 +705,7 @@ textarea.form-control {
                         
                         <div class="col-md-5">
                           <div class="info text-left bg-info">
-                            <h4 class="card-title">Informacion de contacto</h4>
+                            <h4 class="card-title">Información de contacto</h4>
 
                               <div class="info info-horizontal">
                                 <div class="icon">
@@ -747,73 +770,9 @@ textarea.form-control {
 
          <footer class="footer">
            <div class="container">
-             <div class="row">
-               <div class="col-md-3">
-                 <!-- <h1 class="title">BLK•</h1> -->
-               </div>
-               <div class="col-md-3 col-6">
-                 <ul class="nav">
-                   <li class="nav-item">
-                     <a href="./index.html" class="nav-link">
-                       <!-- Home -->
-                     </a>
-                   </li>
-                   <li class="nav-item">
-                     <a href="./examples/landing-page.html" class="nav-link">
-                       <!-- Landing -->
-                     </a>
-                   </li>
-                   <li class="nav-item">
-                     <a href="./examples/register-page.html" class="nav-link">
-                       <!-- Register -->
-                     </a>
-                   </li>
-                   <li class="nav-item">
-                     <a href="./examples/profile-page.html" class="nav-link">
-                       <!-- Profile -->
-                     </a>
-                   </li>
-                 </ul>
-               </div>
-               <div class="col-md-3 col-6">
-                 <ul class="nav">
-                   <li class="nav-item">
-                     <a href="https://creative-tim.com/contact-us?ref=blkdsp-footer" class="nav-link">
-                       <!-- Contact Us -->
-                     </a>
-                   </li>
-                   <li class="nav-item">
-                     <a href="https://creative-tim.com/about-us?ref=blkdsp-footer" class="nav-link">
-                       <!-- About Us -->
-                     </a>
-                   </li>
-                   <li class="nav-item">
-                     <a href="http://creative-tim.com/blog?ref=blkdsp-footer" class="nav-link">
-                       <!-- Blog -->
-                     </a>
-                   </li>
-                   <li class="nav-item">
-                     <a href="https://opensource.org/licenses/MIT?ref=blkdsp-footer" class="nav-link">
-                       <!-- License -->
-                     </a>
-                   </li>
-                 </ul>
-               </div>
-               <div class="col-md-3">
-                 <!-- <h3 class="title">Follow us:</h3> -->
-                 <div class="btn-wrapper profile text-left">
-                   <!-- <a target="_blank" href="https://twitter.com/creativetim" class="btn btn-icon btn-neutral btn-round btn-simple" data-toggle="tooltip" data-original-title="Follow us"> -->
-                     <!-- <i class="fab fa-twitter"></i> -->
-                   </a>
-                   <!-- <a target="_blank" href="https://www.facebook.com/creativetim" class="btn btn-icon btn-neutral btn-round btn-simple" data-toggle="tooltip" data-original-title="Like us"> -->
-                     <!-- <i class="fab fa-facebook-square"></i> -->
-                   </a>
-                   <!-- <a target="_blank" href="https://dribbble.com/creativetim" class="btn btn-icon btn-neutral  btn-round btn-simple" data-toggle="tooltip" data-original-title="Follow us"> -->
-                     <!-- <i class="fab fa-dribbble"></i> -->
-                   </a>
-                 </div>
-               </div>
-             </div>
+
+           <br><br><br>
+           <br><br><br>
            </div>
          </footer>
        </div>
@@ -837,7 +796,7 @@ textarea.form-control {
        <script src="./assets/js/plugins/bootstrap-datetimepicker.js" type="text/javascript"></script>
        <script src="./assets/js/plugins/jasny-bootstrap.min.js"></script>
        <script src="./assets/demo/demo.js"></script>
-       <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"></script>
+       <!-- <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"></script> -->
        <script src="./assets/js/blk-design-system-pro.min.js?v=1.0.0" type="text/javascript"></script>
        <script src="./assets/js/plugins/sweetalert2.all.min.js"></script>
        <!-- <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10.16.6/dist/sweetalert2.all.min.js"></script> -->
