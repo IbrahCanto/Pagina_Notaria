@@ -26,6 +26,9 @@
    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
 
    <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/sweetalert2@10.10.1/dist/sweetalert2.min.css'>
+
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+
  </head>
 
  <style>
@@ -229,7 +232,7 @@
   height: 100%;
   top: auto;
   border-radius: 0.4285rem;
-  background: linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.65) 100%);
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.20), rgba(0, 0, 0, 0.75) 100%);
 }
 
 textarea.form-control {
@@ -256,6 +259,246 @@ textarea.form-control {
   /* display: flex;
   align-items: center; */
 }
+
+.textEdit2{
+color: rgba(255, 255, 255, 0.999);
+font-size: 1.2em;
+text-align: left;
+}
+
+.textEdit1{
+color: rgba(255, 255, 255, 0.999);
+}
+
+/* -------------------------- */
+
+/* body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(45deg, #24006b, #f42f8c);
+  } */
+
+  .container0{
+padding: 15px
+  }
+
+  .container1{
+    padding-left: 5px;
+    padding-right:5px;
+    padding-top: 15px;
+    padding-bottom: 45px;
+  }
+
+  .container2{
+    /* color: #242424; */
+    width: auto;
+    /* display: grid; */
+    display: flex;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-gap: 15px;
+    /* margin: 0 auto; */
+    margin: 0 auto;
+  }
+  
+  .card-2{
+    /* color: #242424; */
+
+    position: relative;
+    width: 350px;
+    height: 600px;
+    margin: 0 auto;
+    background: #fff;
+    box-shadow: 0 15px 60px rgba(0,0,0, .5);
+    border-radius: 15px;
+  }
+  
+  .card-2 .face{
+    /* color: #242424; */
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: top;
+  }
+  
+  .card-2 .face.face1{
+  /* color: #242424; */
+
+  box-sizing: border-box;
+  padding: 20px;
+
+  background: linear-gradient(45deg, #dadada, #aaaaaa);
+  border-radius: 15px;
+}
+  
+  .card-2 .face.face1 h2{
+    color: #242424;
+
+    margin: 0;
+    padding: 0;
+  }
+
+  .card-2 .face.face1 li{
+    color: rgba(26, 26, 26, 0.945);
+    font-size: .8em;
+
+  }
+
+  .card-2 .face.face1 p{
+    color: #242424;
+  }
+  
+  .card-2 .face.face1 .p2{
+  /* color: #242424; */
+  color: rgba(26, 26, 26, 0.945);
+  font-size: 1.2em;
+  font-weight: bold;
+}
+  
+
+
+  .card-2 .face.face1 .content{
+    /* z-index: 10000; */
+
+    /* color: #242424; */
+    font-size:1.2em;
+    margin:0;
+    padding:0 0 1em 0;
+    font-weight:500;
+  }
+  
+  .card-2 .face.face2{
+    /* color: #242424; */
+
+    background: #111;
+    transition: 0.5s;
+  }
+
+  .card-2:nth-child(1) .face.face2{
+    /* color: #242424; */
+
+    background-position: center;
+    background-size: cover;
+    background-image: url('assets/img/businessman-consulting-legal-expert.jpg');
+    /* background: linear-gradient(45deg, #242424, #f7308c); */
+    border-radius: 15px;
+  }
+  
+  .card-2:nth-child(2) .face.face2{
+    /* color: #242424; */
+
+    background-position: center;
+    background-size: cover;
+    background-image: url('assets/img/young-man-working-warehouse-with-boxes.jpg');
+    /* background: linear-gradient(45deg, #242424, #f7308c); */
+    border-radius: 15px;
+  }
+  
+  .card-2:nth-child(3) .face.face2{
+    background-position: center;
+    background-size: cover;
+    background-image: url('assets/img/silhouette-family-walking-by-sunset-time.jpg');
+    /* background: linear-gradient(45deg, #242424, #f7308c); */
+    border-radius: 15px;
+  }
+  
+  .card-2:nth-child(4) .face.face2{
+    background-position: center;
+    background-size: cover;
+    background-image: url('assets/img/businessman-consulting-legal-expert.jpg');
+    /* background: linear-gradient(45deg, #242424, #f7308c); */
+    border-radius: 15px;
+  }
+
+  .card-2:nth-child(5) .face.face2{
+    background-position: center;
+    background-size: cover;
+    background-image: url('assets/img/silhouette-family-walking-by-sunset-time.jpg');
+    /* background: linear-gradient(45deg, #242424, #f7308c); */
+    border-radius: 15px;
+  }
+
+  .card-2:nth-child(6) .face.face2{
+    background-position: center;
+    background-size: cover;
+    background-image: url('assets/img/young-man-working-warehouse-with-boxes.jpg');
+    /* background: linear-gradient(45deg, #242424, #f7308c); */
+    border-radius: 15px;
+  }
+  
+  .card-2:hover .face.face2{
+    /* color: #242424; */
+
+    height: 60px;
+    border-radius: 0 0 15px 15px;
+  }
+  
+  .card-2 .face.face2:before{
+    /* color: #242424; */
+
+    content:'';
+    position: absolute;
+    top:0;
+    left:0;
+    /* width: 50%; */
+    width: 0%;
+
+    /* width: 100%; */
+    height: 100%;
+    background: rgba(255,255,255, 0.1);
+    border-radius: 15px 0 0 15px;
+  }
+
+
+  
+  .card-2 .face.face2 h3{
+    font-family: 'Roboto', sans-serif;
+    /* color: #242424; */
+    margin: 0px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    font-size: 2.5em;
+    color: rgba(255, 255, 255, 1);
+    transition: 0.5s;
+
+    height: 100%;
+    width: 100%;
+    top: auto;
+    border-radius: 15px 15px 15px 15px;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.45) 100%);
+
+    /* text-shadow: 0 1px 1px rgba(255,255,255, 1); */
+  }
+  
+  .card-2:hover .face.face2 .hoverText{
+    font-size: 1.7em;
+    border-radius: 0px 0px 0px 0px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 2px;
+    padding-bottom: 0px;
+  }
+
+  .card-2:hover .face.face2 .hoverText2{
+    font-size: 1em;
+    border-radius: 0px 0px 0px 0px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 2px;
+    padding-bottom: 0px;
+  }
+/* -------------------------- */
  </style>
  
  <body class="sections-page">
@@ -341,54 +584,57 @@ textarea.form-control {
        </div>
      </div>
      <!-- ------------------------------- -->
-
-<!-- ------------------------------- -->
-<!-- <div class="cd-section" id="features">
+     <!-- ------------------------------- -->
+<div class="cd-section" id="features">
        <div class="features-1">
          <div class="container">
            <div class="row">
              <div class="col-md-8 ml-auto mr-auto">
-               <h1 class="title">Acerca De</h1>
+               <!-- <h1 class="title">Acerca De</h1> -->
              </div>
            </div>
            <div class="row">
              <div class="col-md-4">
                <div class="info info-hover">
                  <div class="icon icon-primary">
-                   <img class="bg-blob" src="assets/img/feature-blob/primary.png">
-                   <i class="tim-icons icon-user-run"></i>
+                   <!-- <img class="bg-blob" src="assets/img/feature-blob/primary.png"> -->
+                   <!-- <i class="tim-icons icon-user-run"></i> -->
+                   <i class="bi bi-people-fill"></i>
                  </div>
-                 <h4 class="info-title">Social Conversations</h4>
-                 <p class="description">Gain access to the demographics, psychographics, and location of unique people.</p>
+                 <h4 class="info-title">Misión</h4>
+                 <p class="description">Brindar soluciones a nuestros clientes a través una asesoría honesta, objetiva y personalizada, mediante un equipo de trabajo comprometido, competente, profesional, responsable y disponible con el único fin de brindar certeza y seguridad jurídica en los actos notariales.</p>
                </div>
              </div>
              <div class="col-md-4">
                <div class="info info-hover">
                  <div class="icon icon-success">
-                   <img class="bg-blob" src="assets/img/feature-blob/success.png">
-                   <i class="tim-icons icon-atom"></i>
+                   <!-- <img class="bg-blob" src="assets/img/feature-blob/success.png"> -->
+                   <!-- <i class="tim-icons icon-atom"></i> -->
+                   <i class="bi bi-eye-fill"></i>
                  </div>
-                 <h4 class="info-title">Analyze Performance</h4>
-                 <p class="description">Unify data from Facebook, Instagram, Twitter, LinkedIn, and Youtube to gain rich insights.</p>
+                 <h4 class="info-title">Visión</h4>
+                 <p class="description">Ser una notaría sobresaliente por su profesionalismo, niveles de servicio, conocimientos, lealtad y por el trato justo y honesto a nuestros clientes.</p>
                </div>
              </div>
              <div class="col-md-4">
                <div class="info info-hover">
                  <div class="icon icon-warning">
-                   <img class="bg-blob" src="assets/img/feature-blob/warning.png">
-                   <i class="tim-icons icon-gift-2"></i>
+                   <!-- <img class="bg-blob" src="assets/img/feature-blob/warning.png"> -->
+                   <!-- <i class="tim-icons icon-gift-2"></i> -->
+                   <i class="bi bi-person-hearts"></i>
                  </div>
-                 <h4 class="info-title">Measure Conversions</h4>
-                 <p class="description">Track actions taken on your website, understand the impact on your bottom line.</p>
+                 <h4 class="info-title">Valores</h4>
+                 <p class="description">...</p>
                </div>
              </div>
            </div>
          </div>
        </div>
-     </div> -->
+     </div>
 
-<!-- ------------------------------- -->
-{{-- <div class="features-3" id="nosotros">
+<!-- ------------------------------ -->
+
+     <div class="features-3" id="nosotros">
         <div class="container-fluid">
           <div class="row">
             <div class="col-md-6 mr-auto ml-auto">
@@ -455,11 +701,122 @@ textarea.form-control {
             </div>
           </div>
         </div>
-      </div> --}}
+      </div>
+
+<!-- ------------------------------- -->
+
+<div class="container1" id="blogs-4">
+  <div class="container0">
+<h2 class="title">Servicios</h2>
+</div>
+
+    <div class="container2"> 
+      
+
+    <div class="card-2">
+      <div class="face face1">
+        <div class="content ">
+          <a class="p2">Contratos, traslativos de dominio</a> 
+                          <li>Compraventas, donaciones, dacion en pago, adjudicaciones, permutas, prescripciones</li> 
+                          <li>Fideicomisos traslativos de dominio, y en garantía</li>
+                          <li>Hipotecas, mutuos, cancelaciones de hipoteca</li>
+                          <li>Arrendamientos convenios transaccionales servidumbres</li>
+                          <li>Divisiones, uniones, urbanizaciones, cambios de nomenclatura y rectificaciones de medidas</li>
+                          <li>Régimen de propiedad en condominio</li>
+                          <li>Permutas, prescripciones y servidumbres</li>
+        </div>
+      </div>
+      <div class="face face2" >
+        <h3 class="hoverText">Contratos, traslativos de dominio</h3>
+      </div>
+    </div>
+
+    <div class="card-2">
+      <div class="face face1">
+        <div class="content ">
+          <p class="p2"><b>Sociedades, mercantiles</b></p> 
+                          <li>Constituciones</li>
+                          <li>Actas de asambleas (ordinaria y extraordinaria)</li>
+                          <li>AProtocolizaciones</li>
+                          <li>Ventas de acciones</li>
+                          <li>Fusiones y disoluciones de sociedades</li>
+        </div>
+      </div>
+      <div class="face face2" >
+        <h3 class="hoverText">Sociedades, mercantiles</h3>
+      </div>
+    </div>
+
+    <div class="card-2">
+      <div class="face face1">
+        <div class="content ">
+          <p class="p2"><b>Testamentos</b></p> 
+                          <li>Tramitación de sucesiones</li>
+                          <li>Denuncias de sucesiones testamentarias e intestadas</li>
+                          <li>Inventarios y avalúos proyectos de partición adjudicaciones por herencia</li>
+        </div>
+      </div>
+      <div class="face face2" >
+        <h3 class="hoverText">Testamentos</h3>
+      </div>
+    </div>
+
+    <div class="card-2">
+      <div class="face face1">
+        <div class="content ">
+          <p class="p2"><b>Poderes/mandatos</b></p> 
+                          <li>Certificaciones de documentos, ratificaciones de firmas</li>
+                          <li>Rectificaciones de inscripciones o anotaciones de propiedad</li>
+                          <li>Anotación de régimen matrimonial</li>
+        </div>
+      </div>
+      <div class="face face2" >
+        <h3 class="hoverText">Poderes/mandatos</h3>
+      </div>
+    </div>
+
+    <div class="card-2">
+      <div class="face face1">
+        <div class="content ">
+          <p class="p2"><b>Capitulaciones matrimoniales, disoluciones de sociedad conyugal</b></p> 
+                          <li>Capitulaciones matrimoniales, disoluciones de sociedad conyugal</li>
+                          <li>Tramites por la vía de jurisdicción voluntaria en materia familiar y civil</li>
+                          <li>Fe de hechos</li>
+                          <li>Procedimiento notarial en diligencias de identificación de personas físicas</li>
+        </div>
+      </div>
+      <div class="face face2" >
+        <h3 class="hoverText2">Capitulaciones matrimoniales, disoluciones de sociedad conyugal</h3>
+      </div>
+    </div>
+
+    <div class="card-2">
+      <div class="face face1">
+        <div class="content ">
+          <p class="p2"><b>Consultoría legal en materia:</b></p> 
+                          <li>Civil</li>
+                          <li>Familiar</li>
+                          <li>Agrario</li>
+                          <li>Mediación</li>
+                          <li>Registral</li>
+                          <li>Fiscal</li>
+        </div>
+      </div>
+      <div class="face face2" >
+        <h3 class="hoverText">Consultoría legal</h3>
+      </div>
+    </div>
+    
+  </div>
+  </div>
+
+
+
+
 
 
 <!-- ------------------------------- -->
-     <div class="cd-section" id="blogs">
+{{-- <div class="cd-section" id="blogs">
        <div class="section blogs-4" id="blogs-4">
          <div class="container-fluid">
            <h2 class="title">Servicios</h2>
@@ -470,32 +827,61 @@ textarea.form-control {
                  <div class="card-body">
                    <div class="content">
                      <a href="javascript:;">
-                       <h2 class="card-title">Consultoría Legal en Materia Fiscal</h2>
+                       <h2 class="card-title">Contratos, traslativos de dominio</h2>
+                       <h4>(compraventas, donaciones, dacion en pago, adjudicaciones, permutas, prescripciones)</h4>
                      </a>
+
+                        <div class="textEdit2">
+                          <li>Fideicomisos traslativos de dominio, y en garantía</li>
+                          <li>Hipotecas, mutuos, cancelaciones de hipoteca</li>
+                          <li>Arrendamientos convenios transaccionales servidumbres</li>
+                          <li>Divisiones, uniones, urbanizaciones, cambios de nomenclatura y rectificaciones de medidas</li>
+                          <li>Régimen de propiedad en condominio</li>
+                          <li>Permutas, prescripciones y servidumbres</li>
+                        </div>
+                        
                    </div>
                  </div>
                </div>
              </div>
+
              <div class="col-lg-2">
                <div class="card card-blog card-background" data-animation="zooming">
                  <div class="full-background" style="background-image: url('assets/img/business-man-financial-inspector-secretary-making-report-calculating-checking-balance-internal-revenue-service-inspector-checking-document-audit-concept.jpg')"></div>
                  <div class="card-body">
                    <div class="content">
                      <a href="javascript:;">
-                       <h2 class="card-title">Consultoría Legal en Materia Administrativa</h2>
+                       <h2 class="card-title">Sociedades, mercantiles</h2>
                      </a>
+
+                        <div class="textEdit2">
+                          <li>Constituciones</li>
+                          <li>Actas de asambleas (ordinaria y extraordinaria)</li>
+                          <li>AProtocolizaciones</li>
+                          <li>Ventas de acciones</li>
+                          <li>Fusiones y disoluciones de sociedades</li>
+                        </div>
+
                    </div>
                  </div>
                </div>
              </div>
+
              <div class="col-lg-2">
                <div class="card card-blog card-background" data-animation="zooming">
                  <div class="full-background" style="background-image: url('assets/img/silhouette-family-walking-by-sunset-time.jpg')"></div>
                  <div class="card-body">
                    <div class="content">
                      <a href="javascript:;">
-                       <h2 class="card-title">Consultoría Legal en Materia Familiar</h2>
+                       <h2 class="card-title">Testamentos</h2>
                      </a>
+
+                        <div class="textEdit2">
+                          <li>Tramitación de sucesiones</li>
+                          <li>Denuncias de sucesiones testamentarias e intestadas</li>
+                          <li>Inventarios y avalúos proyectos de partición adjudicaciones por herencia</li>
+                        </div>
+
                    </div>
                  </div>
                </div>
@@ -507,20 +893,36 @@ textarea.form-control {
                  <div class="card-body">
                    <div class="content">
                      <a href="javascript:;">
-                       <h2 class="card-title">Consultoría Legal en Materia Civil</h2>
+                       <h2 class="card-title">Poderes/mandatos</h2>
                      </a>
+
+                        <div class="textEdit2">
+                          <li>Certificaciones de documentos, ratificaciones de firmas</li>
+                          <li>Rectificaciones de inscripciones o anotaciones de propiedad</li>
+                          <li>Anotación de régimen matrimonial</li>
+                        </div>
+
                    </div>
                  </div>
                </div>
              </div>
+
              <div class="col-lg-2">
                <div class="card card-blog card-background" data-animation="zooming">
                  <div class="full-background" style="background-image: url('assets/img/businessman-consulting-legal-expert.jpg')"></div>
                  <div class="card-body">
                    <div class="content">
                      <a href="javascript:;">
-                       <h2 class="card-title">Consultoría Legal en Materia de Amparo</h2>
+                       <h2 class="card-title">Capitulaciones matrimoniales, disoluciones de sociedad conyugal</h2>
                      </a>
+
+                     <div class="textEdit2">
+                          <li>Capitulaciones matrimoniales, disoluciones de sociedad conyugal</li>
+                          <li>Tramites por la vía de jurisdicción voluntaria en materia familiar y civil</li>
+                          <li>Fe de hechos</li>
+                          <li>Procedimiento notarial en diligencias de identificación de personas físicas</li>
+                        </div>
+
                    </div>
                  </div>
                </div>
@@ -532,17 +934,28 @@ textarea.form-control {
                  <div class="card-body">
                    <div class="content">
                      <a href="javascript:;">
-                       <h2 class="card-title">Consultoría Legal en Materia Mercantil</h3>
+                       <h2 class="card-title">Consultoría legal en materia:</h2>
                      </a>
+
+                     <div class="textEdit2">
+                          <li>Civil</li>
+                          <li>Familiar</li>
+                          <li>Agrario</li>
+                          <li>Mediación</li>
+                          <li>Registral</li>
+                          <li>Fiscal</li>
+                        </div>
+
                    </div>
                  </div>
                </div>
              </div>
+
            </div>
          </div>
        </div>
 
-     </div>
+     </div> --}}
 
 
 
