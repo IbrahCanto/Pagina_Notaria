@@ -383,27 +383,23 @@ padding: 15px
     transition: 0.5s;
   }
 
-  .card-2:nth-child(1) .face.face2{
-    /* color: #242424; */
-
+  .card-2:nth-child(1) .face.face2{ /* Contratos, traslativos de dominio */
     background-position: center;
     background-size: cover;
-    background-image: url('assets/img/businessman-consulting-legal-expert.jpg');
+    background-image: url('assets/img/contratos_1.jpg');
     /* background: linear-gradient(45deg, #242424, #f7308c); */
     border-radius: 15px;
   }
   
-  .card-2:nth-child(2) .face.face2{
-    /* color: #242424; */
-
+  .card-2:nth-child(2) .face.face2{ /* Sociedades, mercantiles */
     background-position: center;
     background-size: cover;
-    background-image: url('assets/img/young-man-working-warehouse-with-boxes.jpg');
+    background-image: url('assets/img/mercantil_1.jpg');
     /* background: linear-gradient(45deg, #242424, #f7308c); */
     border-radius: 15px;
   }
   
-  .card-2:nth-child(3) .face.face2{
+  .card-2:nth-child(3) .face.face2{ /* Testamentos */
     background-position: center;
     background-size: cover;
     background-image: url('assets/img/silhouette-family-walking-by-sunset-time.jpg');
@@ -411,7 +407,7 @@ padding: 15px
     border-radius: 15px;
   }
   
-  .card-2:nth-child(4) .face.face2{
+  .card-2:nth-child(4) .face.face2{ /* Poderes/mandatos */
     background-position: center;
     background-size: cover;
     background-image: url('assets/img/businessman-consulting-legal-expert.jpg');
@@ -419,7 +415,7 @@ padding: 15px
     border-radius: 15px;
   }
 
-  .card-2:nth-child(5) .face.face2{
+  .card-2:nth-child(5) .face.face2{ /* Capitulaciones matrimoniales, disoluciones de sociedad conyugal */
     background-position: center;
     background-size: cover;
     background-image: url('assets/img/silhouette-family-walking-by-sunset-time.jpg');
@@ -427,10 +423,10 @@ padding: 15px
     border-radius: 15px;
   }
 
-  .card-2:nth-child(6) .face.face2{
+  .card-2:nth-child(6) .face.face2{ /* Consultoría legal en materia: */
     background-position: center;
     background-size: cover;
-    background-image: url('assets/img/young-man-working-warehouse-with-boxes.jpg');
+    background-image: url('assets/img/consultoria_1.jpg');
     /* background: linear-gradient(45deg, #242424, #f7308c); */
     border-radius: 15px;
   }
@@ -711,8 +707,6 @@ padding: 15px
 </div>
 
     <div class="container2"> 
-      
-
     <div class="card-2">
       <div class="face face1">
         <div class="content ">
@@ -737,7 +731,7 @@ padding: 15px
           <p class="p2"><b>Sociedades, mercantiles</b></p> 
                           <li>Constituciones</li>
                           <li>Actas de asambleas (ordinaria y extraordinaria)</li>
-                          <li>AProtocolizaciones</li>
+                          <li>Protocolizaciones</li>
                           <li>Ventas de acciones</li>
                           <li>Fusiones y disoluciones de sociedades</li>
         </div>

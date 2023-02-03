@@ -22,7 +22,7 @@ Route::get('/', function () {
     return view('index');
 });
 
-Route::post('Comentarios/{nombre?}', [PagesController::class, 'recibir'])->name('comentatios_recibir');
+Route::post('table_test_cat/{nombre?}', [PagesController::class, 'recibir'])->name('comentatios_recibir');
 
 // Route::get('comentarios_validacion/{nombre?}',  function () {
 //     return view('comentarios_validacion',[

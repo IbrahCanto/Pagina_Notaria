@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\table_test;
 use Illuminate\Http\Request;
-use App\Models\Config;
+// use App\Models\Config;
 
 
 class PagesController extends Controller
@@ -13,10 +13,10 @@ class PagesController extends Controller
     	return view('welcome');
     }
 
-    // public function comentarios_mostrar(){
+    // public function table_test_reg_mostrar(){
 
 
-    //     return view('comentarios_mostrar');
+    //     return view('table_test_reg_mostrar');
     // }
 
     public function recibir(Request $request){
@@ -30,24 +30,24 @@ class PagesController extends Controller
 
         ]);
 
-        $comentarios = new table_test();
+        $table_test_reg = new table_test();
 
-        $comentarios->Nombre = $request->Nombre;
-        $comentarios->Email = $request->Email;
-        $comentarios->Telefono = $request->Telefono;
-        $comentarios->Mensaje = $request->Mensaje;
-        $comentarios->Tipo_de_Informacion = $request->Tipo_de_Informacion;
+        $table_test_reg->Nombre = $request->Nombre;
+        $table_test_reg->Email = $request->Email;
+        $table_test_reg->Telefono = $request->Telefono;
+        $table_test_reg->Mensaje = $request->Mensaje;
+        $table_test_reg->Tipo_de_Informacion = $request->Tipo_de_Informacion;
 
-        $comentarios->save();
+        $table_test_reg->save();
 
         return back()->with('success', '');
 
-        // return redirect()->route('comentarios_validacion');
+        // return redirect()->route('table_test_reg_validacion');
     }
 
-    // public function comentarios_validacion(){
+    // public function table_test_reg_validacion(){
 
 
-    //     return view('comentarios_validacion');
+    //     return view('table_test_reg_validacion');
     // }
 }
