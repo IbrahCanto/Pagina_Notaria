@@ -494,6 +494,15 @@ padding: 15px
     padding-top: 2px;
     padding-bottom: 0px;
   }
+
+  .formatText{
+  text-align: left;
+  align-items: left;
+  padding-left: 20%;
+
+  
+}
+
 /* -------------------------- */
  </style>
  
@@ -620,7 +629,20 @@ padding: 15px
                    <i class="bi bi-person-hearts"></i>
                  </div>
                  <h4 class="info-title">Valores</h4>
-                 <p class="description">...</p>
+                 <!-- <p class="description">...</p> -->
+             <!-- <div class="col-md-5"> -->
+                 <div class="formatText">
+                 <p>Capacidad jurídico notarial</p>
+                 <p>Lealtad</p>
+                 <p>Honestidad</p>
+                 <p>Responsabilidad</p>
+                 <p>Confidencialidad</p>
+                 <p>Servicios eficientes</p>
+                 <p>Honorarios justos</p>
+                  </div>
+                  <!-- </div> -->
+
+
                </div>
              </div>
            </div>
@@ -630,7 +652,7 @@ padding: 15px
 
 <!-- ------------------------------ -->
 
-     <div class="features-3" id="nosotros">
+     {{-- <div class="features-3" id="nosotros">
         <div class="container-fluid">
           <div class="row">
             <div class="col-md-6 mr-auto ml-auto">
@@ -697,7 +719,7 @@ padding: 15px
             </div>
           </div>
         </div>
-      </div>
+      </div> --}}
 
 <!-- ------------------------------- -->
 
