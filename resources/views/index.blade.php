@@ -402,7 +402,7 @@ padding: 15px
   .card-2:nth-child(3) .face.face2{ /* Testamentos */
     background-position: center;
     background-size: cover;
-    background-image: url('assets/img/silhouette-family-walking-by-sunset-time.jpg');
+    background-image: url('assets/img/mid-adult-s.jpg');
     /* background: linear-gradient(45deg, #242424, #f7308c); */
     border-radius: 15px;
   }
@@ -579,7 +579,7 @@ padding: 15px
            <div class="container">
              <div class="row">
              <div class="col-lg-5 col-md-12 ml-auto mt-5">
-                   <img src="assets/img/Sin título-1.png">
+                   <img src="assets\img\logo_1.png">
                </div>
                <div class="col-lg-7 col-md-7 mr-auto text-left mt-5">
                </div>
@@ -607,7 +607,7 @@ padding: 15px
                    <i class="bi bi-people-fill"></i>
                  </div>
                  <h4 class="info-title">Misión</h4>
-                 <p class="description">Brindar soluciones a nuestros clientes a través una asesoría honesta, objetiva y personalizada, mediante un equipo de trabajo comprometido, competente, profesional, responsable y disponible con el único fin de brindar certeza y seguridad jurídica en los actos notariales.</p>
+                 <p class="description">Brindar soluciones a nuestros clientes a través de una asesoría honesta, objetiva y personalizada, mediante un equipo de trabajo comprometido, competente, profesional, responsable y disponible con el único fin de brindar certeza y seguridad jurídica en los actos notariales.</p>
                </div>
              </div>
              <div class="col-md-4">
@@ -733,7 +733,7 @@ padding: 15px
       <div class="face face1">
         <div class="content ">
           <a class="p2">Contratos, traslativos de dominio</a> 
-                          <li>Compraventas, donaciones, dacion en pago, adjudicaciones, permutas, prescripciones</li> 
+                          <li>Compraventas, donaciones, dación en pago, adjudicaciones, permutas, prescripciones</li> 
                           <li>Fideicomisos traslativos de dominio, y en garantía</li>
                           <li>Hipotecas, mutuos, cancelaciones de hipoteca</li>
                           <li>Arrendamientos convenios transaccionales servidumbres</li>
@@ -780,14 +780,14 @@ padding: 15px
     <div class="card-2">
       <div class="face face1">
         <div class="content ">
-          <p class="p2"><b>Poderes/mandatos</b></p> 
+          <p class="p2"><b>Poderes / mandatos</b></p> 
                           <li>Certificaciones de documentos, ratificaciones de firmas</li>
                           <li>Rectificaciones de inscripciones o anotaciones de propiedad</li>
                           <li>Anotación de régimen matrimonial</li>
         </div>
       </div>
       <div class="face face2" >
-        <h3 class="hoverText">Poderes/mandatos</h3>
+        <h3 class="hoverText">Poderes / mandatos</h3>
       </div>
     </div>
 
@@ -796,7 +796,7 @@ padding: 15px
         <div class="content ">
           <p class="p2"><b>Capitulaciones matrimoniales, disoluciones de sociedad conyugal</b></p> 
                           <li>Capitulaciones matrimoniales, disoluciones de sociedad conyugal</li>
-                          <li>Tramites por la vía de jurisdicción voluntaria en materia familiar y civil</li>
+                          <li>Trámites por la vía de jurisdicción voluntaria en materia familiar y civil</li>
                           <li>Fe de hechos</li>
                           <li>Procedimiento notarial en diligencias de identificación de personas físicas</li>
         </div>
@@ -885,7 +885,7 @@ padding: 15px
 
              <div class="col-lg-2">
                <div class="card card-blog card-background" data-animation="zooming">
-                 <div class="full-background" style="background-image: url('assets/img/silhouette-family-walking-by-sunset-time.jpg')"></div>
+                 <div class="full-background" style="background-image: url('assets/img/portrait-man-reading-letter2.jpg')"></div>
                  <div class="card-body">
                    <div class="content">
                      <a href="javascript:;">
@@ -1116,11 +1116,11 @@ padding: 15px
                                 <div class="row">
                                   <div class="col-md-8">
                                     <input class="check-input" type="radio" name="Tipo_de_Informacion" id="Radiostipo1" value="Cita_para_Asesoría_Legal"> Cita para asesoría legal
-                                    <input class="check-input" type="radio" name="Tipo_de_Informacion" id="Radiostipo2" value="Información_de_Servicios"> Información de Servicios
+                                    <input class="check-input" type="radio" name="Tipo_de_Informacion" id="Radiostipo2" value="Información_de_Servicios"> Información de servicios
                                   </div>
 
                                   <div class="col-md-4">
-                                    <button type="submit" class="btn btn-primary btn-round pull-right" onClick="this.form.submit(); this.disabled=true; this.value='Sending…'; this.form.reset()">Enviar Mensaje</button>
+                                    <button type="submit" class="btn btn-primary btn-round pull-right" onClick="this.form.submit(); this.disabled=true; this.value='Sending…'; this.form.reset()">Enviar mensaje</button>
                                   </div>
                                 </div>
                                 @error('Tipo_de_Informacion')
