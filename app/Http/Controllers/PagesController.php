@@ -27,6 +27,7 @@ class PagesController extends Controller
         'Telefono' => 'required',
         'Mensaje' => 'required',
         'Tipo_de_Informacion' => 'required',
+        'checkbox_form' =>'required'
 
         ]);
 

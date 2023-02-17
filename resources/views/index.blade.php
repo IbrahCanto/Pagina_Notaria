@@ -294,6 +294,96 @@ padding: 15px
     padding-bottom: 45px;
   }
 
+  .container3{ /* Reemplazar por container2 */
+    /* color: #242424; */
+    width: auto;
+    /* display: grid; */
+    display: flex;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-gap: 15px;
+    /* margin: 0 auto; */
+    margin: 0 auto;
+  }
+
+
+
+  /* --------------------- */
+
+@media (min-width: 0px) and (max-width: 1000px) {
+#container2 {
+    /* color: #242424; */
+    width: auto;
+    /* display: grid; */
+    /* display: flex; */
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-gap: 55px;
+    /* margin: 0 auto; */
+    padding: 10px;
+} 
+
+.card-2{
+    /* color: #242424; */
+
+    position: relative;
+    width: 90%;
+    height: 250px;
+    margin: 0 auto;
+    background: #fff;
+    box-shadow: 0 15px 60px rgba(0,0,0, .5);
+    border-radius: 15px;
+  }
+
+  .card-2:hover .face.face2{
+    /* color: #242424; */
+
+    height: 0px;
+    border-radius: 0 0 15px 15px;
+  }
+
+  .card-2:hover .face.face2 .hoverText{
+    font-size: 0em;
+    border-radius: 0px 0px 0px 0px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 2px;
+    padding-bottom: 0px;
+  }
+
+  .card-2:hover .face.face2 .hoverText2{
+    font-size: 0em;
+    border-radius: 0px 0px 0px 0px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 2px;
+    padding-bottom: 0px;
+  }
+
+  .card-2 .face.face2{
+    font-size: 1.3em;
+
+    /* color: #242424; */
+
+    background: #111;
+    transition: 0.5s;
+  }
+
+  .card-2 .face.face1 li{
+    color: rgba(26, 26, 26, 0.945);
+    font-size: .8em;
+
+  }
+
+  .card-2 .face.face1 .p2{
+  /* color: #242424; */
+  color: rgba(26, 26, 26, 0.945);
+  font-size: 1.2em;
+  font-weight: bold;
+}
+  
+}
+
+
+@media (min-width: 1001px) and (max-width: 1300px){
   .container2{
     /* color: #242424; */
     width: auto;
@@ -304,7 +394,7 @@ padding: 15px
     /* margin: 0 auto; */
     margin: 0 auto;
   }
-  
+
   .card-2{
     /* color: #242424; */
 
@@ -316,7 +406,135 @@ padding: 15px
     box-shadow: 0 15px 60px rgba(0,0,0, .5);
     border-radius: 15px;
   }
+
+  .card-2:hover .face.face2{
+    /* color: #242424; */
+
+    height: 60px;
+    border-radius: 0 0 15px 15px;
+  }
+
+  .card-2:hover .face.face2 .hoverText{
+    font-size: 2.5em;
+    border-radius: 0px 0px 0px 0px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 2px;
+    padding-bottom: 0px;
+  }
+
+  .card-2:hover .face.face2 .hoverText2{
+    font-size: 1.7em;
+    border-radius: 0px 0px 0px 0px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 2px;
+    padding-bottom: 0px;
+  }
+
+  .card-2 .face.face2{
+    font-size: .5em;
+
+    /* color: #242424; */
+
+    background: #111;
+    transition: 0.5s;
+  }
+
+  .card-2 .face.face1 li{
+    color: rgba(26, 26, 26, 0.945);
+    font-size: .67em;
+
+  }
+
+  .card-2 .face.face1 .p2{
+  /* color: #242424; */
+  color: rgba(26, 26, 26, 0.945);
+  font-size: .8em;
+  font-weight: bold;
+}
+
+
+}
+
+
+@media (min-width: 1301px){
+  .container2{
+    /* color: #242424; */
+    width: auto;
+    /* display: grid; */
+    display: flex;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-gap: 15px;
+    /* margin: 0 auto; */
+    margin: 0 auto;
+  }
+
+  .card-2{
+    /* color: #242424; */
+
+    position: relative;
+    width: 350px;
+    height: 600px;
+    margin: 0 auto;
+    background: #fff;
+    box-shadow: 0 15px 60px rgba(0,0,0, .5);
+    border-radius: 15px;
+  }
+
+  .card-2:hover .face.face2{
+    /* color: #242424; */
+
+    height: 60px;
+    border-radius: 0 0 15px 15px;
+  }
+
+  .card-2:hover .face.face2 .hoverText{
+    font-size: 1.7em;
+    border-radius: 0px 0px 0px 0px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 2px;
+    padding-bottom: 0px;
+  }
+
+  .card-2:hover .face.face2 .hoverText2{
+    font-size: 1.2em;
+    border-radius: 0px 0px 0px 0px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 2px;
+    padding-bottom: 0px;
+  }
+
+  .card-2 .face.face2{
+    font-size: .8em;
+
+    /* color: #242424; */
+
+    background: #111;
+    transition: 0.5s;
+  }
+
+  .card-2 .face.face1 li{
+    color: rgba(26, 26, 26, 0.945);
+    font-size: .8em;
+
+  }
+
+  .card-2 .face.face1 .p2{
+  /* color: #242424; */
+  color: rgba(26, 26, 26, 0.945);
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+
+}
+
+  /* ---------------------- */
   
+
   .card-2 .face{
     /* color: #242424; */
 
@@ -326,7 +544,7 @@ padding: 15px
     width: 100%;
     height: 100%;
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: top;
   }
   
@@ -347,41 +565,26 @@ padding: 15px
     padding: 0;
   }
 
-  .card-2 .face.face1 li{
-    color: rgba(26, 26, 26, 0.945);
-    font-size: .8em;
 
-  }
+  
 
   .card-2 .face.face1 p{
     color: #242424;
   }
   
-  .card-2 .face.face1 .p2{
-  /* color: #242424; */
-  color: rgba(26, 26, 26, 0.945);
-  font-size: 1.2em;
-  font-weight: bold;
-}
-  
+
 
 
   .card-2 .face.face1 .content{
     /* z-index: 10000; */
 
     /* color: #242424; */
-    font-size:1.2em;
+    font-size: 1.2em;
     margin:0;
     padding:0 0 1em 0;
     font-weight:500;
   }
   
-  .card-2 .face.face2{
-    /* color: #242424; */
-
-    background: #111;
-    transition: 0.5s;
-  }
 
   .card-2:nth-child(1) .face.face2{ /* Contratos, traslativos de dominio */
     background-position: center;
@@ -431,12 +634,7 @@ padding: 15px
     border-radius: 15px;
   }
   
-  .card-2:hover .face.face2{
-    /* color: #242424; */
 
-    height: 60px;
-    border-radius: 0 0 15px 15px;
-  }
   
   .card-2 .face.face2:before{
     /* color: #242424; */
@@ -477,23 +675,9 @@ padding: 15px
     /* text-shadow: 0 1px 1px rgba(255,255,255, 1); */
   }
   
-  .card-2:hover .face.face2 .hoverText{
-    font-size: 1.7em;
-    border-radius: 0px 0px 0px 0px;
-    padding-left: 5px;
-    padding-right: 5px;
-    padding-top: 2px;
-    padding-bottom: 0px;
-  }
 
-  .card-2:hover .face.face2 .hoverText2{
-    font-size: 1em;
-    border-radius: 0px 0px 0px 0px;
-    padding-left: 5px;
-    padding-right: 5px;
-    padding-top: 2px;
-    padding-bottom: 0px;
-  }
+
+
 
   .formatText{
   text-align: left;
@@ -1117,15 +1301,31 @@ padding: 15px
                                   <div class="col-md-8">
                                     <input class="check-input" type="radio" name="Tipo_de_Informacion" id="Radiostipo1" value="Cita_para_Asesoría_Legal"> Cita para asesoría legal
                                     <input class="check-input" type="radio" name="Tipo_de_Informacion" id="Radiostipo2" value="Información_de_Servicios"> Información de servicios
+                                    @error('Tipo_de_Informacion')
+                                      <p style="color:red"><strong>*{{'Marque una opcion'}}</strong></p>
+                                    @enderror
                                   </div>
+                                  </div>
+
+
+<!-- ---------------- -->
+                                <div class="row">
+                                <div class="col-md-8">
+
+                                  <!-- <br><input type="checkbox" name="checkbox_form" id="option" value="{{old('option')}}"><label for="option"><span></span> <p>Ik ga akkoord met de <a href="#">algemene voorwaarden</a></p></label> -->
+                                  <br><br><input type="checkbox" type="radio" name="checkbox_form" id="option"> <label for="option"><span></span> <p>He leído el  <a href="./assets/doc/Notaría 104. Aviso de Privacidad.pdf" target="_Blank">Aviso de privacidad</a></p></label>
+                                  @error('checkbox_form')
+                                    <p style="color:red"><strong>*{{'Favor de aceptar el Aviso de Privacidad'}}</strong></p>
+                                  @enderror
+                                </div>
+
+<!-- ---------------- -->
 
                                   <div class="col-md-4">
                                     <button type="submit" class="btn btn-primary btn-round pull-right" onClick="this.form.submit(); this.disabled=true; this.value='Sending…'; this.form.reset()">Enviar mensaje</button>
                                   </div>
                                 </div>
-                                @error('Tipo_de_Informacion')
-                                    <p style="color:red"><strong>*{{'Marque una opcion'}}</strong></p>
-                                  @enderror
+
 
 
                               </div>
@@ -1155,7 +1355,8 @@ padding: 15px
                                 <div class="description">
                                   <h5 class="info-title">
                                     Teléfono:
-                                    <br>999X XX XX XX
+                                    <br>9999 214941
+                                    <br>9999 315797
                                   </h5>
                                 </div>
                               </div>
@@ -1187,6 +1388,9 @@ padding: 15px
       </div>
   </div>
 </div>
+
+
+
 
 <!-- </div> -->
 <!-- ---------------------------------------------------------- -->
@@ -1234,7 +1438,8 @@ padding: 15px
        @include('success')
        <script>
 
-        
+$('div.checkbox-group.required :checkbox:checked').length > 0
+
 
 function statusCheck() {
             };
