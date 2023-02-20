@@ -309,7 +309,7 @@ padding: 15px
 
   /* --------------------- */
 
-@media (min-width: 0px) and (max-width: 1000px) {
+@media (min-width: 0px) and (max-width: 1080px) {
 #container2 {
     /* color: #242424; */
     width: auto;
@@ -383,7 +383,7 @@ padding: 15px
 }
 
 
-@media (min-width: 1001px) and (max-width: 1300px){
+@media (min-width: 1081px) and (max-width: 1300px){
   .container2{
     /* color: #242424; */
     width: auto;
@@ -1436,6 +1436,8 @@ padding: 15px
        <script src="./assets/test.js"></script>
        <!-- <script src="./assets/css/app.js"></script> -->
        @include('success')
+       @include('error')
+
        <script>
 
 $('div.checkbox-group.required :checkbox:checked').length > 0
