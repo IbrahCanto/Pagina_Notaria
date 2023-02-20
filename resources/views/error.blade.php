@@ -2,7 +2,7 @@
 <script>
     Swal.fire({
         icon: 'error',
-        title: 'Su mensaje no ha sido enviado',
+        title: 'Falló el envio',
         text: "{{ Session::get('error') }}",
     })
 </script>

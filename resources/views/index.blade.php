@@ -10,20 +10,20 @@
     Notaria 104
    </title>
    <!--     Fonts and icons     -->
-   <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,600,700,800" rel="stylesheet" />
-   <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+   <!-- <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,600,700,800" rel="stylesheet" /> -->
+   <!-- <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet"> -->
    <!-- Nucleo Icons -->
    <link href="./assets/css/nucleo-icons.css" rel="stylesheet" />
    <!-- CSS Files -->
    <link href="./assets/css/blk-design-system-pro.css?v=1.0.0" rel="stylesheet" />
    <!-- CSS Just for demo purpose, don't include it in your project -->
-   <link href="./assets/demo/demo.css" rel="stylesheet" />
+   <!-- <link href="./assets/demo/demo.css" rel="stylesheet" /> -->
 
-   <link href="./assets/css/slick-theme.css" rel="stylesheet" />
+   <!-- <link href="./assets/css/slick-theme.css" rel="stylesheet" />
    <link href="./assets/css/slick.css" rel="stylesheet" />
-   <link href="./assets/css/styles.css" rel="stylesheet" />
+   <link href="./assets/css/styles.css" rel="stylesheet" /> -->
 
-   <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+   <!-- <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/> -->
 
    <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/sweetalert2@10.10.1/dist/sweetalert2.min.css'>
 
@@ -734,10 +734,10 @@ padding: 15px
         Acerca De
         </a>
       </li>
-      <li class="nav-item">
+      <!-- <li class="nav-item">
         <a class="nav-link" href="./#nosotros">
         Nosotros
-        </a>
+        </a> -->
       </li>
       <li class="nav-item">
         <a class="nav-link" href="./#blogs-4">
@@ -1254,6 +1254,9 @@ padding: 15px
                                           </div>
                                             <input type="text" maxlength="100" class="form-control" id="Nombre" name="Nombre" value="{{old('Nombre')}}">
                                         </div>
+                                        @error('Nombre')
+                                      <p style="color:red"><strong>*{{ $message }}</strong></p>
+                                    @enderror
                                     </div>
 
                                 
@@ -1266,15 +1269,14 @@ padding: 15px
                                             </div>
                                           <input type="number" maxlength="100" class="form-control" id="telefono" aria-describedby="emailHelp" name="Telefono" value="{{old('Telefono')}}">
                                         </div>
+                                        @error('Telefono')
+                                    <p style="color:red"><strong>*{{ $message }}</strong></p>
+                                  @enderror
                                       </div>
                                     </div>
                                   </div>
-                                  @error('Nombre')
-                                      <p style="color:red"><strong>*{{ $message }}</strong></p>
-                                    @enderror
-                                  @error('Telefono')
-                                    <p style="color:red"><strong>*{{ $message }}</strong></p>
-                                  @enderror
+
+
 
                                   <div class="form-group">
                                       <label>Correo electrónico</label>
@@ -1284,10 +1286,11 @@ padding: 15px
                                       </div>
                                       <input  type="email" maxlength="100" class="form-control" id="email" aria-describedby="emailHelp" name="Email" value="{{old('Email')}}">
                                     </div>
-                                  </div>
-                                  @error('Email')
+                                    @error('Email')
                                     <p style="color:red"><strong>*{{ $message }}</strong></p>
                                   @enderror
+                                  </div>
+
 
                                   <div class="form-group">
                                     <label>Mensaje</label>
@@ -1308,7 +1311,6 @@ padding: 15px
                                   </div>
 
 
-<!-- ---------------- -->
                                 <div class="row">
                                 <div class="col-md-8">
 
@@ -1319,7 +1321,6 @@ padding: 15px
                                   @enderror
                                 </div>
 
-<!-- ---------------- -->
 
                                   <div class="col-md-4">
                                     <button type="submit" class="btn btn-primary btn-round pull-right" onClick="this.form.submit(); this.disabled=true; this.value='Sending…'; this.form.reset()">Enviar mensaje</button>
@@ -1374,6 +1375,8 @@ padding: 15px
                                 </div>
 
                               <div style="width: 100%"><iframe width="100%" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?q=C.%2017%20331,%20Montebello,%2097113%20M%C3%A9rida,%20Yuc.&t=&z=17&ie=UTF8&iwloc=&output=embed"><a href="https://www.gps.ie/car-satnav-gps/">GPS car tracker</a></iframe></div>
+
+                                
                           </div>
                         </div>
                       </div>
@@ -1413,27 +1416,27 @@ padding: 15px
        <script src="https://code.jquery.com/jquery-3.4.1.min.js"
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
        <script src="./assets/js/core/jquery.min.js" type="text/javascript"></script>
-       <script src="./assets/js/core/popper.min.js" type="text/javascript"></script>
+       <!-- <script src="./assets/js/core/popper.min.js" type="text/javascript"></script> -->
        <script src="./assets/js/core/bootstrap.min.js" type="text/javascript"></script>
-       <script src="./assets/js/plugins/perfect-scrollbar.jquery.min.js"></script>
-       <script src="./assets/css/slick.min.js"></script>
-       <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-       <script src="./assets/js/plugins/bootstrap-switch.js"></script>
-       <script src="./assets/js/plugins/nouislider.min.js" type="text/javascript"></script>
-       <script src="./assets/js/plugins/slick.js" type="text/javascript"></script>
-       <script src="./assets/js/plugins/anime.min.js" type="text/javascript"></script>
+       <!-- <script src="./assets/js/plugins/perfect-scrollbar.jquery.min.js"></script> -->
+       <!-- <script src="./assets/css/slick.min.js"></script> -->
+       <!-- <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script> -->
+       <!-- <script src="./assets/js/plugins/bootstrap-switch.js"></script>
+       <script src="./assets/js/plugins/nouislider.min.js" type="text/javascript"></script> -->
+       <!-- <script src="./assets/js/plugins/slick.js" type="text/javascript"></script> -->
+       <!-- <script src="./assets/js/plugins/anime.min.js" type="text/javascript"></script>
        <script src="./assets/js/plugins/chartjs.min.js"></script>
        <script src="./assets/js/plugins/moment.min.js"></script>
        <script src="./assets/js/plugins/bootstrap-tagsinput.js"></script>
        <script src="./assets/js/plugins/bootstrap-selectpicker.js" type="text/javascript"></script>
        <script src="./assets/js/plugins/bootstrap-datetimepicker.js" type="text/javascript"></script>
-       <script src="./assets/js/plugins/jasny-bootstrap.min.js"></script>
-       <script src="./assets/demo/demo.js"></script>
+       <script src="./assets/js/plugins/jasny-bootstrap.min.js"></script> -->
+       <!-- <script src="./assets/demo/demo.js"></script> -->
        <!-- <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"></script> -->
        <script src="./assets/js/blk-design-system-pro.min.js?v=1.0.0" type="text/javascript"></script>
        <script src="./assets/js/plugins/sweetalert2.all.min.js"></script>
        <!-- <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10.16.6/dist/sweetalert2.all.min.js"></script> -->
-       <script src="./assets/test.js"></script>
+       <!-- <script src="./assets/test.js"></script> -->
        <!-- <script src="./assets/css/app.js"></script> -->
        @include('success')
        @include('error')
@@ -1460,239 +1463,239 @@ function statusCheck() {
                         });
                         $('#buttonStart #checkboxPolyline').attr('unchecked', 'checked').change();
 
-           blackKit.initVideoBackground();
+          //  blackKit.initVideoBackground();
  
            if ($('.nav-down').length != 0) {
              blackKit.checkScrollForMovingNavbar();
            };
  
-           $(".center").slick({
-             dots: false,
-             infinite: true,
-             centerMode: true,
-             slidesToShow: 4,
-             slidesToScroll: 1,
-             responsive: [{
-                 breakpoint: 1024,
-                 settings: {
-                   slidesToShow: 3,
-                   slidesToScroll: 1,
-                   infinite: true,
-                 }
-               },
-               {
-                 breakpoint: 600,
-                 settings: {
-                   slidesToShow: 2,
-                   slidesToScroll: 1
-                 }
-               },
-               {
-                 breakpoint: 480,
-                 settings: {
-                   slidesToShow: 1,
-                   slidesToScroll: 1
-                 }
-               }
-             ]
-           });
+          //  $(".center").slick({
+          //    dots: false,
+          //    infinite: true,
+          //    centerMode: true,
+          //    slidesToShow: 4,
+          //    slidesToScroll: 1,
+          //    responsive: [{
+          //        breakpoint: 1024,
+          //        settings: {
+          //          slidesToShow: 3,
+          //          slidesToScroll: 1,
+          //          infinite: true,
+          //        }
+          //      },
+          //      {
+          //        breakpoint: 600,
+          //        settings: {
+          //          slidesToShow: 2,
+          //          slidesToScroll: 1
+          //        }
+          //      },
+          //      {
+          //        breakpoint: 480,
+          //        settings: {
+          //          slidesToShow: 1,
+          //          slidesToScroll: 1
+          //        }
+          //      }
+          //    ]
+          //  });
  
-           $('.customer-logos').slick({
-             slidesToShow: 6,
-             slidesToScroll: 1,
-             autoplay: true,
-             autoplaySpeed: 2500,
-             arrows: false,
-             dots: false,
-             pauseOnHover: false,
-             responsive: [{
-                 breakpoint: 768,
-                 settings: {
-                   slidesToShow: 4
-                 }
-               },
-               {
-                 breakpoint: 520,
-                 settings: {
-                   slidesToShow: 3
-                 }
-               },
-               {
-                 breakpoint: 480,
-                 settings: {
-                   slidesToShow: 1,
-                   slidesToScroll: 1
-                 }
-               }
-             ]
-           });
+          //  $('.customer-logos').slick({
+          //    slidesToShow: 6,
+          //    slidesToScroll: 1,
+          //    autoplay: true,
+          //    autoplaySpeed: 2500,
+          //    arrows: false,
+          //    dots: false,
+          //    pauseOnHover: false,
+          //    responsive: [{
+          //        breakpoint: 768,
+          //        settings: {
+          //          slidesToShow: 4
+          //        }
+          //      },
+          //      {
+          //        breakpoint: 520,
+          //        settings: {
+          //          slidesToShow: 3
+          //        }
+          //      },
+          //      {
+          //        breakpoint: 480,
+          //        settings: {
+          //          slidesToShow: 1,
+          //          slidesToScroll: 1
+          //        }
+          //      }
+          //    ]
+          //  });
 
-           {
-             class ImgItem {
-               constructor(el) {
-                 this.DOM = {};
-                 this.DOM.el = el;
-                 this.DOM.svg = this.DOM.el.querySelector('.item__svg');
-                 this.DOM.path = this.DOM.svg.querySelector('path');
-                 this.paths = {};
-                 this.paths.start = this.DOM.path.getAttribute('d');
-                 this.paths.end = this.DOM.el.dataset.morphPath;
-                 this.DOM.deco = this.DOM.svg.querySelector('.item__deco');
-                 this.DOM.image = this.DOM.svg.querySelector('image');
-                 this.DOM.title = this.DOM.el.querySelector('.item__meta > .item__title');
-                 this.DOM.subtitle = this.DOM.el.querySelector('.item__meta > .item__subtitle');
-                 this.CONFIG = {
-                   animation: {
-                     path: {
-                       duration: this.DOM.el.dataset.animationPathDuration || 1500,
-                       delay: this.DOM.el.dataset.animationPathDelay || 0,
-                       easing: this.DOM.el.dataset.animationPathEasing || 'easeOutElastic',
-                       elasticity: this.DOM.el.dataset.pathElasticity || 400,
-                       scaleX: this.DOM.el.dataset.pathScalex || 1,
-                       scaleY: this.DOM.el.dataset.pathScaley || 1,
-                       translateX: this.DOM.el.dataset.pathTranslatex || 0,
-                       translateY: this.DOM.el.dataset.pathTranslatey || 0,
-                       rotate: this.DOM.el.dataset.pathRotate || 0
-                     },
-                     image: {
-                       duration: this.DOM.el.dataset.animationImageDuration || 2000,
-                       delay: this.DOM.el.dataset.animationImageDelay || 0,
-                       easing: this.DOM.el.dataset.animationImageEasing || 'easeOutElastic',
-                       elasticity: this.DOM.el.dataset.imageElasticity || 400,
-                       scaleX: this.DOM.el.dataset.imageScalex || 1.1,
-                       scaleY: this.DOM.el.dataset.imageScaley || 1.1,
-                       translateX: this.DOM.el.dataset.imageTranslatex || 0,
-                       translateY: this.DOM.el.dataset.imageTranslatey || 0,
-                       rotate: this.DOM.el.dataset.imageRotate || 0
-                     },
-                     deco: {
-                       duration: this.DOM.el.dataset.animationDecoDuration || 2500,
-                       delay: this.DOM.el.dataset.animationDecoDelay || 0,
-                       easing: this.DOM.el.dataset.animationDecoEasing || 'easeOutQuad',
-                       elasticity: this.DOM.el.dataset.decoElasticity || 400,
-                       scaleX: this.DOM.el.dataset.decoScalex || 0.9,
-                       scaleY: this.DOM.el.dataset.decoScaley || 0.9,
-                       translateX: this.DOM.el.dataset.decoTranslatex || 0,
-                       translateY: this.DOM.el.dataset.decoTranslatey || 0,
-                       rotate: this.DOM.el.dataset.decoRotate || 0
-                     }
-                   }
-                 };
-                 this.initEvents();
-               }
-               initEvents() {
-                 this.mouseenterFn = () => {
-                   this.mouseTimeout = setTimeout(() => {
-                     this.isActive = true;
-                     this.animate();
-                   }, 75);
-                 }
-                 this.mouseleaveFn = () => {
-                   clearTimeout(this.mouseTimeout);
-                   if (this.isActive) {
-                     this.isActive = false;
-                     this.animate();
-                   }
-                 }
-                 this.DOM.el.addEventListener('mouseenter', this.mouseenterFn);
-                 this.DOM.el.addEventListener('mouseleave', this.mouseleaveFn);
-                 this.DOM.el.addEventListener('touchstart', this.mouseenterFn);
-                 this.DOM.el.addEventListener('touchend', this.mouseleaveFn);
-               }
-               getAnimeObj(targetStr) {
-                 const target = this.DOM[targetStr];
-                 let animeOpts = {
-                   targets: target,
-                   duration: this.CONFIG.animation[targetStr].duration,
-                   delay: this.CONFIG.animation[targetStr].delay,
-                   easing: this.CONFIG.animation[targetStr].easing,
-                   elasticity: this.CONFIG.animation[targetStr].elasticity,
-                   scaleX: this.isActive ? this.CONFIG.animation[targetStr].scaleX : 1,
-                   scaleY: this.isActive ? this.CONFIG.animation[targetStr].scaleY : 1,
-                   translateX: this.isActive ? this.CONFIG.animation[targetStr].translateX : 0,
-                   translateY: this.isActive ? this.CONFIG.animation[targetStr].translateY : 0,
-                   rotate: this.isActive ? this.CONFIG.animation[targetStr].rotate : 0
-                 };
-                 if (targetStr === 'path') {
-                   animeOpts.d = this.isActive ? this.paths.end : this.paths.start;
-                 }
-                 anime.remove(target);
-                 return animeOpts;
-               }
-               animate() {
-                 anime(this.getAnimeObj('path'));
-                 anime(this.getAnimeObj('image'));
-                 anime(this.getAnimeObj('deco'));
-                 anime.remove(this.DOM.title);
-                 anime({
-                   targets: this.DOM.title,
-                   easing: 'easeOutQuad',
-                   translateY: this.isActive ? [{
-                       value: '-50%',
-                       duration: 200
-                     },
-                     {
-                       value: ['50%', '0%'],
-                       duration: 200
-                     }
-                   ] : [{
-                       value: '50%',
-                       duration: 200
-                     },
-                     {
-                       value: ['-50%', '0%'],
-                       duration: 200
-                     }
-                   ],
-                   opacity: [{
-                       value: 0,
-                       duration: 200
-                     },
-                     {
-                       value: 1,
-                       duration: 200
-                     }
-                   ]
-                 });
-                 anime.remove(this.DOM.subtitle);
-                 anime({
-                   targets: this.DOM.subtitle,
-                   easing: 'easeOutQuad',
-                   translateY: this.isActive ? {
-                     value: ['50%', '0%'],
-                     duration: 200,
-                     delay: 250
-                   } : {
-                     value: '0%',
-                     duration: 1
-                   },
-                   opacity: this.isActive ? {
-                     value: [0, 1],
-                     duration: 200,
-                     delay: 250
-                   } : {
-                     value: 0,
-                     duration: 1
-                   }
-                 });
-               }
-             }
+          //  {
+          //    class ImgItem {
+          //      constructor(el) {
+          //        this.DOM = {};
+          //        this.DOM.el = el;
+          //        this.DOM.svg = this.DOM.el.querySelector('.item__svg');
+          //        this.DOM.path = this.DOM.svg.querySelector('path');
+          //        this.paths = {};
+          //        this.paths.start = this.DOM.path.getAttribute('d');
+          //        this.paths.end = this.DOM.el.dataset.morphPath;
+          //        this.DOM.deco = this.DOM.svg.querySelector('.item__deco');
+          //        this.DOM.image = this.DOM.svg.querySelector('image');
+          //        this.DOM.title = this.DOM.el.querySelector('.item__meta > .item__title');
+          //        this.DOM.subtitle = this.DOM.el.querySelector('.item__meta > .item__subtitle');
+          //        this.CONFIG = {
+          //          animation: {
+          //            path: {
+          //              duration: this.DOM.el.dataset.animationPathDuration || 1500,
+          //              delay: this.DOM.el.dataset.animationPathDelay || 0,
+          //              easing: this.DOM.el.dataset.animationPathEasing || 'easeOutElastic',
+          //              elasticity: this.DOM.el.dataset.pathElasticity || 400,
+          //              scaleX: this.DOM.el.dataset.pathScalex || 1,
+          //              scaleY: this.DOM.el.dataset.pathScaley || 1,
+          //              translateX: this.DOM.el.dataset.pathTranslatex || 0,
+          //              translateY: this.DOM.el.dataset.pathTranslatey || 0,
+          //              rotate: this.DOM.el.dataset.pathRotate || 0
+          //            },
+          //            image: {
+          //              duration: this.DOM.el.dataset.animationImageDuration || 2000,
+          //              delay: this.DOM.el.dataset.animationImageDelay || 0,
+          //              easing: this.DOM.el.dataset.animationImageEasing || 'easeOutElastic',
+          //              elasticity: this.DOM.el.dataset.imageElasticity || 400,
+          //              scaleX: this.DOM.el.dataset.imageScalex || 1.1,
+          //              scaleY: this.DOM.el.dataset.imageScaley || 1.1,
+          //              translateX: this.DOM.el.dataset.imageTranslatex || 0,
+          //              translateY: this.DOM.el.dataset.imageTranslatey || 0,
+          //              rotate: this.DOM.el.dataset.imageRotate || 0
+          //            },
+          //            deco: {
+          //              duration: this.DOM.el.dataset.animationDecoDuration || 2500,
+          //              delay: this.DOM.el.dataset.animationDecoDelay || 0,
+          //              easing: this.DOM.el.dataset.animationDecoEasing || 'easeOutQuad',
+          //              elasticity: this.DOM.el.dataset.decoElasticity || 400,
+          //              scaleX: this.DOM.el.dataset.decoScalex || 0.9,
+          //              scaleY: this.DOM.el.dataset.decoScaley || 0.9,
+          //              translateX: this.DOM.el.dataset.decoTranslatex || 0,
+          //              translateY: this.DOM.el.dataset.decoTranslatey || 0,
+          //              rotate: this.DOM.el.dataset.decoRotate || 0
+          //            }
+          //          }
+          //        };
+          //        this.initEvents();
+          //      }
+          //      initEvents() {
+          //        this.mouseenterFn = () => {
+          //          this.mouseTimeout = setTimeout(() => {
+          //            this.isActive = true;
+          //            this.animate();
+          //          }, 75);
+          //        }
+          //        this.mouseleaveFn = () => {
+          //          clearTimeout(this.mouseTimeout);
+          //          if (this.isActive) {
+          //            this.isActive = false;
+          //            this.animate();
+          //          }
+          //        }
+          //        this.DOM.el.addEventListener('mouseenter', this.mouseenterFn);
+          //        this.DOM.el.addEventListener('mouseleave', this.mouseleaveFn);
+          //        this.DOM.el.addEventListener('touchstart', this.mouseenterFn);
+          //        this.DOM.el.addEventListener('touchend', this.mouseleaveFn);
+          //      }
+          //      getAnimeObj(targetStr) {
+          //        const target = this.DOM[targetStr];
+          //        let animeOpts = {
+          //          targets: target,
+          //          duration: this.CONFIG.animation[targetStr].duration,
+          //          delay: this.CONFIG.animation[targetStr].delay,
+          //          easing: this.CONFIG.animation[targetStr].easing,
+          //          elasticity: this.CONFIG.animation[targetStr].elasticity,
+          //          scaleX: this.isActive ? this.CONFIG.animation[targetStr].scaleX : 1,
+          //          scaleY: this.isActive ? this.CONFIG.animation[targetStr].scaleY : 1,
+          //          translateX: this.isActive ? this.CONFIG.animation[targetStr].translateX : 0,
+          //          translateY: this.isActive ? this.CONFIG.animation[targetStr].translateY : 0,
+          //          rotate: this.isActive ? this.CONFIG.animation[targetStr].rotate : 0
+          //        };
+          //        if (targetStr === 'path') {
+          //          animeOpts.d = this.isActive ? this.paths.end : this.paths.start;
+          //        }
+          //        anime.remove(target);
+          //        return animeOpts;
+          //      }
+          //      animate() {
+          //        anime(this.getAnimeObj('path'));
+          //        anime(this.getAnimeObj('image'));
+          //        anime(this.getAnimeObj('deco'));
+          //        anime.remove(this.DOM.title);
+          //        anime({
+          //          targets: this.DOM.title,
+          //          easing: 'easeOutQuad',
+          //          translateY: this.isActive ? [{
+          //              value: '-50%',
+          //              duration: 200
+          //            },
+          //            {
+          //              value: ['50%', '0%'],
+          //              duration: 200
+          //            }
+          //          ] : [{
+          //              value: '50%',
+          //              duration: 200
+          //            },
+          //            {
+          //              value: ['-50%', '0%'],
+          //              duration: 200
+          //            }
+          //          ],
+          //          opacity: [{
+          //              value: 0,
+          //              duration: 200
+          //            },
+          //            {
+          //              value: 1,
+          //              duration: 200
+          //            }
+          //          ]
+          //        });
+          //        anime.remove(this.DOM.subtitle);
+          //        anime({
+          //          targets: this.DOM.subtitle,
+          //          easing: 'easeOutQuad',
+          //          translateY: this.isActive ? {
+          //            value: ['50%', '0%'],
+          //            duration: 200,
+          //            delay: 250
+          //          } : {
+          //            value: '0%',
+          //            duration: 1
+          //          },
+          //          opacity: this.isActive ? {
+          //            value: [0, 1],
+          //            duration: 200,
+          //            delay: 250
+          //          } : {
+          //            value: 0,
+          //            duration: 1
+          //          }
+          //        });
+          //      }
+          //    }
  
-             const items = Array.from(document.querySelectorAll('.item'));
-             const init = (() => items.forEach(item => new ImgItem(item)))();
-             setTimeout(() => document.body.classList.remove('loading'), 2000);
-           };
+          //    const items = Array.from(document.querySelectorAll('.item'));
+          //    const init = (() => items.forEach(item => new ImgItem(item)))();
+          //    setTimeout(() => document.body.classList.remove('loading'), 2000);
+          //  };
  
          });
        </script>
-       <script src="https://cdn.trackjs.com/agent/v3/latest/t.js"></script>
-       <script>
-         window.TrackJS &&
-           TrackJS.install({
-             token: "ee6fab19c5a04ac1a32a645abde4613a",
-             application: "black-dashboard-pro"
-           });
-       </script>
+       <!-- <script src="https://cdn.trackjs.com/agent/v3/latest/t.js"></script> -->
+       <!-- <script>
+        //  window.TrackJS &&
+        //    TrackJS.install({
+        //      token: "ee6fab19c5a04ac1a32a645abde4613a",
+        //      application: "black-dashboard-pro"
+        //    });
+       </script> -->
  </body>
  
  </html>

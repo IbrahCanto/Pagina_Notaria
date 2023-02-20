@@ -44,7 +44,7 @@ class PagesController extends Controller
     // }
 
     if ($validator->fails()) {
-        return back()->with('error', 'Favor de revisarlo')
+        return back()->with('error', 'Favor de revisar su mensaje')
                     ->withErrors($validator)
                     ->withInput();
     }
@@ -56,7 +56,7 @@ class PagesController extends Controller
 
     // Check validation success
     if ($validator->passes()) {
-        return back()->with('success', '');
+        return back()->with('success', 'Pronto nos pondremos en contacto con usted');
     }
 
     // Retrieve errors message bag
@@ -95,6 +95,6 @@ class PagesController extends Controller
     // public function table_test_reg_validacion(){
 
 
-    //     return view('table_test_reg_validacion');
+    //     return view('#contactus');
     // }
 }
