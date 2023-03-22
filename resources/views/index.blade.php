@@ -1369,7 +1369,7 @@ padding: 15px
                                   <div class="description">
                                     <h5 class="info-title">
                                       Correo electrónico:
-                                      <br>pablocastro1827@gmail.com
+                                      <br>notaria104yucatan@gmail.com
                                     </h5>
                                   </div>
                                 </div>
